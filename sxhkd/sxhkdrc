@@ -1,0 +1,71 @@
+# make sxhkd reload its configuration files
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# quit or restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# move window focus in cycle
+super + {j,k}
+    bspc node -f {next,prev}.local.!hidden.window
+
+# lock session
+super + shift + l
+	~/screenlock.sh
+
+# create a new terminal
+super + Return
+	kitty
+
+# open app launcher
+super + p
+	rofi -show drun
+
+# window switcher
+super + w
+        rofi -show window
+
+# open file manager
+super + v
+        nemo	
+
+# close or kill a window
+super + c
+	bspc node -c
+
+# change the window state
+super + {t,shift + t,s,f}
+        bspc node -t {tiled,pseudo_tiled,\~floating,\~fullscreen}
+
+# switch keyboard language
+super + space 
+	~/.config/sxhkd/keyboard.sh
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# focus or send a window to the given desktop
+super + {_,shift + }{1-9,9}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# cycle displays
+super + {period,comma}
+	bspc monitor -f next
+
+# move window to second monitor
+super + shift + {period,comma}
+	bspc node -m next
+
+# rectangle selection screenshot
+Print
+	flameshot gui
+
+# mute default audio input
+XF86Launch7
+	pamixer --default-source -t
+
+# suspend session
+# super + shift + s
+#         systemctl suspend

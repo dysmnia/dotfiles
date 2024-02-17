@@ -8,7 +8,7 @@ super + shift + {q,r}
 
 # move window focus in cycle
 super + {j,k}
-    bspc node -f {next,prev}.local.!hidden.window
+	bspc node -f {next,prev}.local.!hidden.window
 
 # lock session
 super + shift + l

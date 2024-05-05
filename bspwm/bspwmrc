@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 dunst &
 polybar &
-feh --bg-scale ~/Pictures/maxresdefault_4xup.jpg &
+feh --bg-scale ~/pictures/maxresdefault_4xup.jpg &
 
 bspc monitor DisplayPort-0 -d 4 5 6
 bspc monitor DisplayPort-2 -d 1 2 3

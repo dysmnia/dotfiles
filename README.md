@@ -1,7 +1,7 @@
 ## dependencies
 
-### xorg
-`ttf-jetbrains-mono-nerd feh nemo sxhkd rofi dunst xsecurelock flameshot bspwm polybar`
+### for xorg
+`ttf-jetbrains-mono-nerd feh nemo sxhkd rofi dunst xsecurelock flameshot bspwm polybar pamixer`
 
-### wayland
+### for wayland
 `ttf-jetbrains-mono-nerd hyprland hyprpaper wofi waybar dunst waylock grimshot nemo`

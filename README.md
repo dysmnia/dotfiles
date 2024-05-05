@@ -1,4 +1,3 @@
-## deps (arch)
+## dependencies
 
-fonts: `ttf-jetbrains-mono-nerd terminus-font`  
-other stuff: `feh nemo xsecurelock flameshot`
+`ttf-jetbrains-mono-nerd terminus-font feh nemo xsecurelock flameshot`

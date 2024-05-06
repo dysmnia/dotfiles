@@ -13,7 +13,7 @@
 
 #input:focus {
     border: 1px solid #f5c2e7;
-    box-shadow: none; /* what the fuck gtk why is the default outline a shadow */
+    box-shadow: none;
 }
 
 #scroll {
@@ -28,7 +28,7 @@
 #entry:selected {
     background-color: #f5c2e7;
     color: #1e1e2e;
-    outline: none; /* gets rid of the shitty ass random outline */
+    outline: none;
 }
 
 #text:selected {

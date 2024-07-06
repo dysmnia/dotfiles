@@ -6,4 +6,4 @@
 
 ### bspwm
 
-`feh kitty nemo setxkbmap flameshot pamixer rofi dunst`
+`feh kitty nemo rofi xsecurelock setxkbmap flameshot pamixer dunst`

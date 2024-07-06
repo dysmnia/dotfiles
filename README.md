@@ -2,7 +2,7 @@
 
 ### Hyprland
 
-`kitty nemo wofi dunst`
+`kitty nemo wofi waylock grimshot dunst`
 
 ### bspwm
 

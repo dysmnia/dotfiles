@@ -12,7 +12,7 @@ super + {j,k}
 
 # lock session
 super + shift + l
-	~/screenlock.sh
+	xsecurelock
 
 # create a new terminal
 super + Return
@@ -40,7 +40,7 @@ super + {t,shift + t,s,f}
 
 # switch keyboard language
 super + space 
-	~/.config/sxhkd/keyboard.sh
+	$HOME/dotfiles/.config/sxhkd/keyboard.sh
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
